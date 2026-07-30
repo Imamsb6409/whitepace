@@ -3,6 +3,7 @@
     "tailwindcss": "^4.3.3"
   },
   "scripts": {
+    "build": "echo 'No build needed'",
     "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   }
 }
