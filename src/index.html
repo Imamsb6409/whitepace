@@ -1,0 +1,681 @@
+<!doctype html>
+<html id="html" lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-inter">
+    <header
+      class="bg-[#043873] dark:bg-gray-900 dark:text-white text-white sticky top-0 z-50 left-0 w-full shadow-xl"
+    >
+      <div
+        class="w-full container mx-auto p-4 flex justify-between items-center"
+      >
+        <!-- logo -->
+        <div class="flex items-center gap-2">
+          <img src="./assets/Logo Icon.svg" alt="" />
+          <p class="font-bold text-xl">Whitepace</p>
+        </div>
+        <!-- dekstop navbar -->
+        <div class="hidden lg:flex">
+          <ul class="flex gap-4 items-center mr-4">
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >Products
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down inline-block"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >Solutions
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down inline-block"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >Resources
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down inline-block"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >Pricing
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down inline-block"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg></span
+              ></a>
+            </li>
+          </ul>
+          <button
+            class="cursor-pointer dark:bg-gray-950 dark:text-white bg-[#FFE492] text-[#043873] px-8 py-4 rounded-lg font-semibold"
+          >
+            Login
+          </button>
+          <button
+            class="cursor-pointer text-white dark:bg-[#002a5e] bg-[#4F9CF9] dark:bg-[#002a5e] dark:text-white rounded-lg px-8 py-4 ml-4 flex items-center gap-2"
+          >
+            Try Whitepace Free
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right inline-block"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <!-- mobile navbar -->
+        <div class="lg:hidden">
+          <button class="cursor-pointer" onclick="toggleNavbar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="42"
+              height="42"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </button>
+
+          <div
+            id="myLinks"
+            class="-translate-y-full duration-300 fixed top-0 left-0 w-full h-screen bg-gray-800 text-white p-4 z-50"
+          >
+            <button
+              class="absolute cursor-pointer top-4 right-4"
+              onclick="toggleNavbar()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icon-tabler-x"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6L6 18" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </button>
+            <ul class="flex flex-col gap-6 mt-12 text-center text-xl">
+              <li><a href="#" class="hover:text-gray-300">Product</a></li>
+              <li><a href="#" class="hover:text-gray-300">Resources</a></li>
+              <li><a href="#" class="hover:text-gray-300">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- toggleDark -->
+        <button
+          class="relative text-white p-2 cursor-pointer flex gap-2 bg-blue-400 rounded-full items-center"
+          onclick="toggleDarkMode()"
+        >
+          <div id="toggleIdle" class="absolute left-0 mx-1 rounded-full w-8 h-8 bg-amber-200 duration-300"></div>
+          <svg
+            id="iconOnDarkMode"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-sun z-50 duration-500 text-black"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+            <path
+              d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+            />
+          </svg>
+          <svg
+            id="iconOnLightMode"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler  icons-tabler-outline icon-tabler-moon z-50 duration-500"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <section
+        class="pt-20 px-4 bg-[#043873] dark:bg-gray-900 text-white min-h-screen"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center gap-25 lg:flex-row"
+        >
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl/snug lg:text-6xl font-bold">
+              Get More Done with whitepace
+            </h1>
+            <p class="text-lg mt-6 lg:w-[672px]">
+              Project management software that enables your teams to
+              collaborate, plan, analyze and manage everyday tasks
+            </p>
+            <button
+              class="cursor-pointer bg-[#4F9CF9] dark:bg-[#002a5e] dark:text-white text-white px-10 py-6 rounded-lg font-semibold mt-15"
+            >
+              Try TasKey Free
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right inline-block"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="bg-blue-200 w-85 h-47.75 lg:w-207 lg:h-138"></div>
+        </div>
+      </section>
+      <!-- project -->
+      <section
+        class="pt-20 px-4 bg-white dark:bg-gray-950 dark:text-white min-h-screen"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center gap-25 lg:flex-row"
+        >
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl/snug lg:text-6xl font-bold">
+              Project Management
+            </h1>
+            <p class="text-lg mt-6 lg:w-[672px]">
+              Images, videos, PDFs and audio files are supported. Create math
+              expressions and diagrams directly from the app. Take photos with
+              the mobile app and save them to a note.
+            </p>
+            <button
+              class="cursor-pointer bg-[#4F9CF9] dark:bg-[#002a5e] dark:text-white text-white px-10 py-6 rounded-lg font-semibold mt-15"
+            >
+              Get Started
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right inline-block"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="bg-blue-200 w-85 h-47.75 lg:w-207 lg:h-138"></div>
+        </div>
+      </section>
+      <!-- work together -->
+      <section
+        class="pt-20 px-4 bg-white dark:bg-gray-950 dark:text-white min-h-screen"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center gap-25 lg:flex-row"
+        >
+          <div class="text-center lg:text-left lg:order-2">
+            <h1 class="text-5xl/snug lg:text-6xl font-bold">Work together</h1>
+            <p class="text-lg mt-6 lg:w-[672px]">
+              With whitepace, share your notes with your colleagues and
+              collaborate on them. You can also publish a note to the internet
+              and share the URL with others.
+            </p>
+            <button
+              class="cursor-pointer bg-[#4F9CF9] dark:bg-[#002a5e] dark:text-white text-white px-10 py-6 rounded-lg font-semibold mt-15"
+            >
+              Try it now
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right inline-block"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            class="bg-blue-200 w-85 h-47.75 lg:w-207 lg:h-138 lg:order-1"
+          ></div>
+        </div>
+      </section>
+      <!-- use as extension -->
+      <section
+        class="py-35 px-4 bg-[#043873] dark:bg-gray-900 dark:text-white text-white"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center gap-25 lg:flex-row"
+        >
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl/snug tracking-wide lg:text-6xl font-bold">
+              Use as Extension
+            </h1>
+            <p class="text-lg mt-6 lg:w-[672px]">
+              Customise the app with plugins, custom themes and multiple text
+              editors (Rich Text or Markdown). Or create your own scripts and
+              plugins using the Extension API.
+            </p>
+            <button
+              class="cursor-pointer bg-[#4F9CF9] dark:bg-[#002a5e] dark:text-white text-white px-10 py-6 rounded-lg font-semibold mt-15"
+            >
+              Let's Go
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right inline-block"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="bg-blue-200 w-85 h-47.75 lg:w-207 lg:h-138"></div>
+        </div>
+      </section>
+      <!-- sponsor -->
+      <section
+        class="py-35 px-4 w-full dark:bg-gray-950 dark:text-white bg-white text-black"
+      >
+        <div class="container mx-auto flex flex-col items-center gap-25">
+          <h1 class="text-5xl/snug tracking-wide lg:text-6xl font-bold">
+            Our Sponsor
+          </h1>
+          <div class="grid gap-32 grid-cols-1 lg:grid-cols-4 overflow-x-hidden">
+            <div class="h-20 w-55 bg-blue-200 text-center"></div>
+            <div class="h-20 w-55 bg-blue-200 text-center"></div>
+            <div class="h-20 w-55 bg-blue-200 text-center"></div>
+            <div class="h-20 w-55 bg-blue-200 text-center"></div>
+          </div>
+        </div>
+      </section>
+      <!-- try whitepace -->
+      <section
+        class="py-35 px-4 bg-[#043873] text-white dark:bg-gray-900 dark:text-white"
+      >
+        <div class="container mx-auto flex flex-col items-center gap-25">
+          <div class="text-left lg:text-center">
+            <h1 class="text-5xl/snug tracking-wide lg:text-6xl font-bold">
+              Try Whitepace today
+            </h1>
+            <p class="text-lg mt-6 lg:w-[672px]">
+              Get started for free. <br />
+              Add your whole team as your needs grow.
+            </p>
+            <button
+              class="cursor-pointer bg-[#4F9CF9] dark:bg-[#002a5e] dark:text-white text-white px-10 py-6 rounded-lg font-semibold mt-15"
+            >
+              Try Taskey Free
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right inline-block"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
+              </span>
+            </button>
+            <p class="text-lg mt-6 lg:w-[672px]">
+              On a big team? Contact sales
+            </p>
+            <div class="flex gap-4 lg:gap-10 mt-15 lg:justify-center">
+              <div class="bg-blue-300 w-9 h-9 lg:w-15 lg:h-15"></div>
+              <div class="bg-blue-300 w-9 h-9 lg:w-15 lg:h-15"></div>
+              <div class="bg-blue-300 w-9 h-9 lg:w-15 lg:h-15"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#043873] text-white dark:bg-gray-950 py-10 px-4 lg:flex lg:flex-col lg:gap-40 pt-10"
+    >
+      <!-- footer atas -->
+      <div
+        class="container mx-auto grid gap-y-20 lg:gap-x-10 grid-cols-1 lg:grid-cols-5 lg:flex lg:flex-row lg:justify-between lg:items-center"
+      >
+        <div
+          class="flex lg:w-51 flex-col items-center text-center lg:text-left lg:items-start"
+        >
+          <div class="flex items-center gap-2">
+            <img src="./assets/Logo Icon.svg" class="w-8 h-8" alt="" />
+            <p class="font-bold text-3xl">Whitepace</p>
+          </div>
+          <p class="text-[16px] mt-6">
+            whitepace was created for the new ways we live and work. We make
+            beautyfully designed around the world
+          </p>
+        </div>
+        <div
+          class="flex lg:w-51 flex-col items-center text-center lg:text-left lg:items-start gap-4"
+        >
+          <p class="font-bold text-xl lg:text-[16px]">Product</p>
+
+          <p class="text-[16px]">Overview</p>
+          <p class="text-[16px]">Pricing</p>
+          <p class="text-[16px]">Costumer stories</p>
+        </div>
+        <div
+          class="flex lg:w-51 flex-col items-center text-center lg:text-left lg:items-start gap-4"
+        >
+          <p class="font-bold text-xl lg:text-[16px]">Resources</p>
+
+          <p class="text-[16px]">Blog</p>
+          <p class="text-[16px]">Guides & tutorials</p>
+          <p class="text-[16px]">Help center</p>
+        </div>
+        <div
+          class="flex lg:w-51 flex-col items-center text-center lg:text-left lg:items-start gap-4"
+        >
+          <p class="font-bold text-xl lg:text-[16px]">Company</p>
+
+          <p class="text-[16px]">About us</p>
+          <p class="text-[16px]">Careers</p>
+          <p class="text-[16px]">Media kit</p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center lg:text-left lg:items-start"
+        >
+          <p class="font-bold text-3xl">Try It Today</p>
+
+          <p class="text-xl lg:w-71 lg:text-[16px] tracking-wider le mt-6">
+            Get started for free. Add your whole team as your needs grow.
+          </p>
+          <button
+            class="cursor-pointer bg-[#4F9CF9] dark:bg-[#002a5e] dark:text-white text-white px-10 py-6 rounded-lg mt-15"
+          >
+            Start today
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right inline-block"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- footer paling bawah -->
+      <div
+        class="container mx-auto flex flex-col lg:flex-row lg:justify-between items-center gap-4 mt-20 text-center lg:border-t lg:border-gray-400 lg:pt-4 lg:gap-10 lg:mt-15"
+      >
+        <div
+          class="flex flex-col items-center gap-4 lg:flex-row lg:items-center"
+        >
+          <div class="flex justify-center items-center gap-2 mt-10 lg:mt-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-world"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+              <path d="M3.6 9h16.8" />
+              <path d="M3.6 15h16.8" />
+              <path d="M11.5 3a17 17 0 0 0 0 18" />
+              <path d="M12.5 3a17 17 0 0 1 0 18" />
+            </svg>
+            English
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-chevron-down"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18.707 8.293a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1 -1.414 0l-6 -6a1 1 0 0 1 1.414 -1.414l5.293 5.293l5.293 -5.293a1 1 0 0 1 1.414 0"
+              />
+            </svg>
+          </div>
+          <p class="text-lg">Terms & privacy</p>
+          <p class="text-lg">Security</p>
+          <p class="text-lg">Status</p>
+          <p class="text-lg">©2021 Whitepace LLC.</p>
+        </div>
+        <hr class="w-full border-gray-400 lg:hidden" />
+        <div class="flex gap-4 lg:gap-10 mt-15 lg:mt-0 lg:justify-center">
+          <div class="text-center w-4 h-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+              />
+            </svg>
+          </div>
+          <div class="text-center w-4 h-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-dragon"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M10.706 8.849l-5.706 -3.301l-2 6.452l3.5 -1.973l.5 2.973l3.555 -1.385"
+              />
+              <path
+                d="M15 9c0 3.5 4 3 4 7c0 3 -3 5 -5.5 5s-6 -.5 -6.5 -5c2 2 6.592 3.043 7.5 1c1.094 -2.461 -4 -3.459 -4 -6.5c0 -2.062 .5 -2.5 1.8 -3.2"
+              />
+              <path d="M18 6a3 3 270 1 0 -3 3h5l1 -3h-3" />
+              <path d="M15 3h-8l5 3" />
+            </svg>
+          </div>
+          <div class="text-center w-4 h-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 11v5" />
+              <path d="M8 8v.01" />
+              <path d="M12 16v-5" />
+              <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+              <path
+                d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
